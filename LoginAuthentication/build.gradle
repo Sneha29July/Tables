@@ -23,14 +23,17 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-security'
 	ext['spring-security.version']='5.1.6.RELEASE'
+//	compile "org.springframework.boot:spring-boot-starter-security"
 	//compile "org.springframework.security:spring-security-web"
 	//compile "org.springframework.security:spring-security-config"
 	//beans:bean id="encoder"
 	//class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"
-	implementation group: 'org.springframework.data', name: 'spring-data-elasticsearch', version: '4.2.3'
+	//compile("org.springframework.boot:spring-boot-starter-security")
+	//implementation group: 'org.springframework.data', name: 'spring-data-elasticsearch', version: '4.2.3'
 	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
-	runtimeOnly 'com.microsoft.sqlserver:mssql-jdbc'
+	//runtimeOnly 'com.microsoft.sqlserver:mssql-jdbc'
+	runtimeOnly 'mysql:mysql-connector-java'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
